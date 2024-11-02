@@ -1,0 +1,45 @@
+.product{
+    transition: all .5s ease;
+    position: relative;
+}
+.product:hover{
+    transform: scale(1.1);
+}
+.product:hover .btn-add{
+    bottom: 0;
+    color: #fff !important;
+    opacity: 1;
+    width: 100%;
+}
+.btn-add{
+    bottom: -50px;
+    transition: bottom .5s ease,width .5s ease, scale .5s ease;
+    color: transparent !important;
+    font-weight: 600;
+    position: relative;
+    opacity: .8;
+width: 50%;
+
+margin-top: 16px;
+}
+.btn-add:active{
+    scale: .9;
+}
+.img-show-product{
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.527);
+    color: rgb(0, 140, 255);
+}
+.img-product:hover .img-show-product{
+    opacity: 1;
+
+}
+.product:hover .btn-stare{
+    opacity: 1 !important;
+    translate: 0 0 ;
+}
+.btn-stare{
+    transition: all .5s ease;
+    translate: 60px -60px;
+    opacity: 0 !important;
+}
